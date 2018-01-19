@@ -5,6 +5,13 @@ public class GCD {
 	//EUCLID'S ALGO
 	
 	public static int gcdITERATIVElikeIdid(int a, int b){
+		
+		if (a<b){
+			int temp = a;
+			a = b;
+			b = temp;
+		}
+		
 	    int divisor = a;
 	      int dividend = b;
 	      int rem = -1;
@@ -48,7 +55,7 @@ public class GCD {
 	      //OR
 	      
 	      
-	      return recAns;
+	      return iterAns;
 	      
 		}
 
@@ -57,7 +64,7 @@ public class GCD {
 		int a = s.nextInt();
 		int b = s.nextInt();
 		
-		System.out.println(gcdRECURSIVElikeSirdid(a, b));
+		System.out.println(gcd(a, b));
 	}
 
 }
