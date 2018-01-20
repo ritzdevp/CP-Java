@@ -47,7 +47,7 @@ public class SegmentedSieve {
 				isPrime[(int)(j-left)] = false; 
 			}
 			// there may be a case where base is itself a prime number
-			if (base == currPrime){
+			if (base == currPrime && base<=right){
 				isPrime[(int)(base-left)] = true;
 			}
 		}
